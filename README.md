@@ -48,15 +48,15 @@ Each story node is a Markdown file named:
 TIMESTAMP-HASH-title.md
 ```
 
-Example: `2026-0228T220000Z-8f2d1a3b-genesis.md`
+Example: `2026-0303T000000Z-8f2d1a3b-genesis.md`
 
-Nodes are connected through `meta/relations.json`.
+Nodes are stored in `nodes/` and connected through `meta/relations.json`.
 
 ---
 
 ## Navigation
 
-Each node supports five actions:
+Each node supports six actions:
 
 | Button | Action |
 |--------|--------|
@@ -66,6 +66,19 @@ Each node supports five actions:
 | ⏪ | Write what came before |
 | ⏭️ | Write what comes after |
 | 🌀 | Jump through a wormhole (`bridge_to`) |
+
+---
+
+## Repository structure
+
+```
+forklore-galaxy/
+├── nodes/        — story nodes (.md files)
+├── meta/         — relations.json and other metadata
+├── README.md
+├── PHILOSOPHY.md
+└── CONTRIBUTORS.md
+```
 
 ---
 
@@ -83,9 +96,11 @@ When contributing:
 
 ## Instance policy
 
-This repository is one instance of the Forklore Galaxy format.
+Any person or community may fork this repository and run their own instance of Forklore Galaxy. They may set their own narrative policies, their own community rules, their own aesthetic standards.
 
-Anyone may fork this repository and run their own instance with their own community policies. No permission needed. Central control is intentionally absent.
+No instance is the "real" Forklore Galaxy. All instances are.
+
+**If you are forking this repository to run your own instance: this README is yours to rewrite. Replace it with your own instance description, your own rules, your own vision. That is the point.**
 
 ---
 
@@ -104,7 +119,7 @@ Anyone may fork this repository and run their own instance with their own commun
 
 - 🗺️ Galaxy Map: *(coming soon)*
 - 📖 How to write a node: *(coming soon)*
-- 🤝 CONTRIBUTORS.md: *(coming soon)*
+- 🤝 CONTRIBUTORS.md
 
 ---
 
@@ -121,6 +136,8 @@ Anyone may fork this repository and run their own instance with their own commun
 
 これは21世紀のデジタル民話です。そしてそれ以降も続きます。
 
+---
+
 ## 参加方法
 
 1. **読む** — ノードを閲覧し、気になる分岐をたどる
@@ -130,30 +147,37 @@ Anyone may fork this repository and run their own instance with their own commun
 
 それだけです。承認プロセスも、管理者も不要です。
 
+---
+
 ## 哲学
 
-- **分岐等価** — すべての分岐は等価。どの分岐も他より「本物」ではない
-- **正史なし** — どの物語にも「正しいバージョン」は存在しない
-- **矛盾歓迎** — 矛盾するノードはエラーではなく、並行世界として歓迎する
-- **永続性** — ノードは削除されない。漂流しても、存在し続ける
-- **リレー** — このプロジェクトはいかなる個人の貢献者よりも長く続くように設計されている
+| 原則 | 意味 |
+|------|------|
+| **分岐等価** | すべての分岐は等価。どの分岐も他より「本物」ではない |
+| **正史なし** | どの物語にも「正しいバージョン」は存在しない |
+| **矛盾歓迎** | 矛盾するノードはエラーではなく、並行世界として歓迎する |
+| **永続性** | ノードは削除されない。漂流しても、存在し続ける |
+| **リレー** | このプロジェクトはいかなる個人の貢献者よりも長く続くように設計されている |
+
+---
 
 ## ノードの形式
 
 各ストーリーノードは以下の形式のMarkdownファイルです：
+
 ```
 TIMESTAMP-HASH-title.md
 ```
 
-例：`2026-0228T220000Z-8f2d1a3b-genesis.md`
+例：`2026-0303T000000Z-8f2d1a3b-genesis.md`
 
-ノードは `meta/relations.json` で接続されます。
+ノードは `nodes/` に格納され、`meta/relations.json` で接続されます。
 
 ---
 
 ## ナビゲーション
 
-各ノードは5つのアクションに対応しています：
+各ノードは6つのアクションに対応しています：
 
 | ボタン | アクション |
 |--------|-----------|
@@ -164,6 +188,21 @@ TIMESTAMP-HASH-title.md
 | ⏭️ | この後を書く |
 | 🌀 | ワームホールでジャンプする（`bridge_to`） |
 
+---
+
+## リポジトリ構造
+
+```
+forklore-galaxy/
+├── nodes/        — ストーリーノード（.mdファイル）
+├── meta/         — relations.jsonとその他メタデータ
+├── README.md
+├── PHILOSOPHY.md
+└── CONTRIBUTORS.md
+```
+
+---
+
 ## 著作権について
 
 初期ノードはパブリックドメイン素材（民話・神話・古典文学）を使用しています。
@@ -173,6 +212,37 @@ TIMESTAMP-HASH-title.md
 - ✅ パブリックドメイン作品とその派生
 - ✅ CC-BYライセンス作品
 - ❌ 著作権のある商業作品の直接引用
+
+---
+
+## インスタンスポリシー
+
+誰でもこのリポジトリをフォークして独自のForklore Galaxyインスタンスを運営できます。独自のナラティブポリシー、コミュニティルール、美的基準を設定できます。
+
+「本物の」Forklore Galaxyであるインスタンスは存在しません。すべてのインスタンスがそうです。
+
+**独自のインスタンスを運営するためにこのリポジトリをフォークした方へ：このREADMEはあなたのものです。あなたのインスタンスの説明、ルール、ビジョンに書き換えてください。それがこのプロジェクトの目的です。**
+
+---
+
+## ロードマップ
+
+| フェーズ | 目標 |
+|---------|------|
+| Phase 1 | 初期ノード執筆・リポジトリ公開 |
+| Phase 2 | GitHub Pages UI + 最初の公開フォーク |
+| Phase 3 | オープンインスタンス形式（誰でもホスト可能） |
+| Phase 4 | クロスリポジトリノードリンク（Open Narrative Format） |
+
+---
+
+## リンク
+
+- 🗺️ 銀河マップ：*(coming soon)*
+- 📖 ノードの書き方：*(coming soon)*
+- 🤝 CONTRIBUTORS.md
+
+---
 
 ## フォークして自由に
 
