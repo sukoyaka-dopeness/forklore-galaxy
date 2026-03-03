@@ -1,0 +1,30 @@
+{
+  "2026-0303T023800Z-00000000-genesis": {
+    "precedes": ["2026-0303T025900Z-00000001-and-the-word-branched"],
+    "follows": [],
+    "characters": [],
+    "location": null,
+    "bridge_to": [],
+    "tags": ["genesis", "origin"],
+    "cycle_annotation": null,
+    "created_by": "human",
+    "degree": 1,
+    "heat": 0,
+    "visibility": "public",
+    "status": "active"
+  },
+  "2026-0303T025900Z-00000001-and-the-word-branched": {
+    "precedes": [],
+    "follows": ["2026-0303T023800Z-00000000-genesis"],
+    "characters": [],
+    "location": null,
+    "bridge_to": [],
+    "tags": ["origin", "branching"],
+    "cycle_annotation": null,
+    "created_by": "human",
+    "degree": 1,
+    "heat": 0,
+    "visibility": "public",
+    "status": "active"
+  }
+}
